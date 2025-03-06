@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --white-color: white;
+}
+
+:root {
+    --purple-color: #A44DAB;
+}
+
+body, header, footer, .logo, .main-title, .sub-title, .search-bar, .search-btn, .footer-links a, .newsletter, .newsletter input, .signup-btn, footer p, .copyright {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #2335a6 0%, #00338c 15%, #002e6f 30%, #002651 45%, #001d34 60%, #0b293c 70%, #193443 80%, #28404b 90%, #336a79 100%, #3b98a6 110%, #47c9ce 120%, #5ffbf1 130%);
+    color: white;
+    text-align: center;
+}   
+
+header {
+    padding: 50px 0;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.heading-txt{
+font-size:clamp(1.5rem, 6vw, 2rem);
+font-family: 'Poppins', sans-serif;
+
+
+}
+.main-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.sub-title {
+    font-size: 50px;
+    color: var(--purple-color); /* Purple color */
+}
+
+
+
+.chatbot-send-btn {
+    background-color: #24b4fb; /* Purple */
+    color: white;
+    padding: 18px 30px;
+    border: 2px solid #24b4fb;
+    border-radius: 5px;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+    font-family: Poppins;
+    font-size: 20   px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.chatbot-send-btn:hover {
+    background-color: #0071e2;
+  }
+    
+
+
+  
+.footer {
+    background-color: none;
+    padding: 50px 0;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.newsletter {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.newsletter-txt {
+    font-size: 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.email-updates {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.newsletter input {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.signup-btn {
+    background-color: var(--purple-color); /* Purple */
+    color: white;
+    margin-left: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+    
+}
+
+.footer-links{
+    width: 40%;
+    margin-top: 50px;
+
+}
+
+.footer-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: block;
+    color: var(--purple-color); 
+    text-decoration: none;
+    margin: 2px 0;
+}
+
+
+
+
+
+
+
+.copyright{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by Admin12121 */ 
+.input {
+    --icon-size: 28px;
+    position: relative;
+  }
+  
+  .input svg {
+    position: absolute;
+    width: var(--icon-size);
+    top: 50%;   
+    left: 10%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    color: color-mix(in lch, canvas, canvasText 30%);
+  }
+  
+  .input svg path {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  
+  .input:is(:hover, :focus-within) .svg path {
+    animation: pop 0.5s var(--d);
+  }
+  
+  .input svg path:nth-of-type(1) {
+    --d: 0.24s;
+    --r: 20deg;
+    --s: 1.5;
+  }
+  .input svg path:nth-of-type(2) {
+    --d: 0.12s;
+    --r: 10deg;
+    --s: 1.4;
+  }
+  .input svg path:nth-of-type(3) {
+    --d: 0s;
+    --r: 0deg;
+    --s: 1.25;
+  }
+  
+  @keyframes pop {
+    50% {
+      scale: var(--s, 1);
+      rotate: var(--r, 0deg);
+    }
+  }
+  
+.search::placeholder {
+    color: color-mix(in lch, canvas, canvasText 30%);
+    text-rendering: optimizeLegibility;
+}
+
+
+
+  
+  .search {
+    box-shadow:
+      0 20px 25px -5px rgb(0 0 0 / 0.15),
+      0 8px 10px -6px rgb(0 0 0 / 0.25);
+    font-family: inherit;
+    min-width: 70%;
+    padding: 1rem 1rem 1rem calc(1rem + var(--icon-size) + 0.5rem);
+    font-size: 1.025rem;
+    field-sizing: content;
+    background:
+      linear-gradient(canvas, canvas) padding-box,
+      linear-gradient(120deg, hsl(278, 44%, 73%), hsl(35, 81%, 73%)) border-box;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    outline: none;
+    /*   background-clip: padding-box, border-box; */
+  }
+  
+  .bear-link {
+    color: canvasText;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 40px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    opacity: 0.8;
+  }
+  
+  :where(.x-link, .bear-link):is(:hover, :focus-visible) {
+    opacity: 1;
+  }
+  
+  .bear-link .svg {
+    width: 80%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* From Uiverse.io by jeremyssocial */ 
+@keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 6.2em;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  
+  .terminal{
+
+    margin: auto;
+    margin-top: 20px;
+    align-content: center;
+}
+
+
+  .terminal-loader {
+    
+    right: -120px;
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    padding: 1.5em 1em;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+   box-sizing: border-box;
+  }
+  
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+  }
+  
+ .terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+  }
+  
+  #response {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green; /* Cursor */
+    animation:
+      
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+  }
+
+
+
+  
